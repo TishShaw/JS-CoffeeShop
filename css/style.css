@@ -234,8 +234,8 @@ section {
 
 .gallery .box-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 30rem);
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, 33rem);
+    gap: 1.5rem;
     align-items: flex-start;
     justify-content: center;
 }
@@ -245,6 +245,30 @@ section {
     width: 100%;
     object-fit: cover;
 }
+
+.team .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 33rem);
+    gap: 1.5rem;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.team .box-container .box {
+    text-align: center;
+}
+
+.team .box-container .box img {
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: .5rem;
+}
+
+.team .box-container .box h3 {
+    font-size: 2rem;
+    color: var(--black);
+}
+
 
 /*  Media queries */
 @media screen and (max-width: 991px) {
