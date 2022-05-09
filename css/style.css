@@ -211,7 +211,7 @@ section {
 
 .menu .box-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-template-columns: repeat(auto-fit, 30rem);
     gap: 2rem;
     align-items: flex-start;
     justify-content: center;
@@ -232,6 +232,19 @@ section {
     color: var(--black);
 }
 
+.gallery .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 30rem);
+    gap: 2rem;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.gallery .box-container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
 
 /*  Media queries */
 @media screen and (max-width: 991px) {
